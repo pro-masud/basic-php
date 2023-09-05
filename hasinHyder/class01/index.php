@@ -96,10 +96,10 @@
 
 
  $n = 7;
-//  $m = $n++; // $m = $n;  hoto // $m = ++$n; = 8
-$m = $n++;
+// //  $m = $n++; // $m = $n;  hoto // $m = ++$n; = 8
+// $m = $n++;
 
- echo $m . "\n" . $n;
+//  echo $m . "\n" . $n;
 
 
 
@@ -129,11 +129,53 @@ $m = $n++;
  * 
  */
 
- $decmeal = 12;
- $binary = 12;
- $octal = 112;
- $hex = "6434";
+//  $decmeal = 12;
+//  $binary = 12;
+//  $octal = 112;
+//  $hex = "6434";
 
- printf("This is a Dacemal Number %d To %b \n", $decmeal, $binary );
- printf("This is a Dacemal Number %d To %o \n", $decmeal, $octal );
- printf("This is a Dacemal Number %d To %x \n", $decmeal, $hex );
+//  printf("This is a Dacemal Number %d To %b \n", $decmeal, $binary );
+//  printf("This is a Dacemal Number %d To %o \n", $decmeal, $octal );
+//  printf("This is a Dacemal Number %d To %x \n", $decmeal, $hex );
+
+
+
+
+
+
+
+
+
+/**
+ * 
+ * Day: 01    CLASS: 1.10
+ * 
+ */
+
+ $fname = "masud";
+
+ $lname = "Rana";
+
+ $middleName = "Dev";
+
+
+//  outpur data conditionaly
+
+printf('My Name Is %3$s %1$s %2$s', $fname, $lname, $middleName);
+
+echo "\n";
+
+// convert a one variable 2 number working 
+printf('This is a Octal Number %1$d, %1$x', 333);
+
+echo"\n";
+
+$n = 34.1245;
+
+printf('%.2f', $n);
+
+echo "\n";
+
+$t = 34.3452;
+
+printf('%07.2f', $t);
