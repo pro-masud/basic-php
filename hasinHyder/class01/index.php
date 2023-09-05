@@ -214,23 +214,56 @@
 
 
 // heard condition in php 
-$year = 2000;
+// $year = 2000;
 
-if($year % 4 == 0 && $year % 100 == 0 && $year % 400 == 0){
-    echo "{$year} is a Leap Year";
-}else if($year % 4 == 0 && $year % 100 == 0){
-    echo "{$year} is Not a Leap Year";
-}else if($year % 4 == 0){
-    echo "{$year} is a Leap Year";
+// if($year % 4 == 0 && $year % 100 == 0 && $year % 400 == 0){
+//     echo "{$year} is a Leap Year";
+// }else if($year % 4 == 0 && $year % 100 == 0){
+//     echo "{$year} is Not a Leap Year";
+// }else if($year % 4 == 0){
+//     echo "{$year} is a Leap Year";
+// }else{
+//     echo "{$year} is Not a Leap Year";
+// }
+
+// echo "\n";
+// // online heard condition
+
+// if($year % 4 == 0 && ($year % 100 != 0 || $year % 400 == 0 )){
+//     echo "{$year} is a leap year";
+// }else{
+//     echo "{$year} is Not a leap year";
+// }
+
+
+
+// if else nessed condition 
+
+
+$conOne = true;
+$conTwo = true;
+$conThree = false;
+
+if($conOne){
+    if($conTwo){
+        if($conThree){
+            echo "Hello";
+        }else{
+            echo "Flase One";
+        }
+    }else{
+        echo "Flase Two";
+    }
 }else{
-    echo "{$year} is Not a Leap Year";
+    echo "Flase Three";
 }
 
 echo "\n";
-// online heard condition
 
-if($year % 4 == 0 && ($year % 100 != 0 || $year % 400 == 0 )){
-    echo "{$year} is a leap year";
+if($conOne && $conTwo && $conThree){
+    echo "Hello";
+}else if($conOne && $conTwo){
+    echo "True Two";
 }else{
-    echo "{$year} is Not a leap year";
+    echo "True One";
 }
