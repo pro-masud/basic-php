@@ -152,30 +152,85 @@
  * 
  */
 
- $fname = "masud";
+//  $fname = "masud";
 
- $lname = "Rana";
+//  $lname = "Rana";
 
- $middleName = "Dev";
+//  $middleName = "Dev";
 
 
-//  outpur data conditionaly
+// //  outpur data conditionaly
 
-printf('My Name Is %3$s %1$s %2$s', $fname, $lname, $middleName);
+// printf('My Name Is %3$s %1$s %2$s', $fname, $lname, $middleName);
+
+// echo "\n";
+
+// // convert a one variable 2 number working 
+// printf('This is a Octal Number %1$d, %1$x', 333);
+
+// echo"\n";
+
+// $n = 34.1245;
+
+// printf('%.2f', $n);
+
+// echo "\n";
+
+// $t = 34.3452;
+
+// printf('%07.2f', $t);
+
+
+
+
+
+
+/**
+ * 
+ * Day: 01    CLASS: 1.11
+ * 
+ */
+
+
+//  $number = 22;
+
+//  $output = sprintf("This Is number %s", $number);
+
+//  echo $output;
+
+
+
+
+// condition in php 
+
+// $age = 15;
+
+// if( $age >= 13 and $age <= 19){
+//     echo "this Person Is a Teenager";
+// }else{
+//     echo "this Person Not A Teenager";
+// }
+
+
+
+// heard condition in php 
+$year = 2000;
+
+if($year % 4 == 0 && $year % 100 == 0 && $year % 400 == 0){
+    echo "{$year} is a Leap Year";
+}else if($year % 4 == 0 && $year % 100 == 0){
+    echo "{$year} is Not a Leap Year";
+}else if($year % 4 == 0){
+    echo "{$year} is a Leap Year";
+}else{
+    echo "{$year} is Not a Leap Year";
+}
 
 echo "\n";
+// online heard condition
 
-// convert a one variable 2 number working 
-printf('This is a Octal Number %1$d, %1$x', 333);
-
-echo"\n";
-
-$n = 34.1245;
-
-printf('%.2f', $n);
-
-echo "\n";
-
-$t = 34.3452;
-
-printf('%07.2f', $t);
+if($year % 4 == 0 && ($year % 100 != 0 || $year % 400 == 0 )){
+    echo "{$year} is a leap year";
+}else{
+    echo "{$year} is Not a leap year";
+}
