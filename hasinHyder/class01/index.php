@@ -66,21 +66,55 @@
 
 /**
  * 
- * Day: 01    CLASS: 1.3
+ * Day: 01    CLASS: 1.7
  * 
  */
 
 
- $number = 12;
+//  $number = 12;
 
- $number += 13; // $number = $number + 13;
+//  $number += 13; // $number = $number + 13;
 
-$number = (20-10) * 2;
+// $number = (20-10) * 2;
 
-$number = (30-24) / 2;
+// $number = (30-24) / 2;
 
-$number = (33 - 3) % 4; //BODMAS = Bracket, Of, Division, Multiplication, Addition, and Subtraction
+// $number = (33 - 3) % 4; //BODMAS = Bracket, Of, Division, Multiplication, Addition, and Subtraction
  
- echo $number ;
+//  echo $number ;
 
 
+
+
+
+
+/**
+ * 
+ * Day: 01    CLASS: 1.8
+ * 
+ */
+
+
+ $n = 7;
+//  $m = $n++; // $m = $n;  hoto // $m = ++$n; = 8
+$m = $n++;
+
+ echo $m . "\n" . $n;
+
+
+
+//  example here
+
+/**
+ * $m = $n++;
+ * $m = $n;
+ * $n = $n + 1;
+ * 
+*/
+
+/**
+ * $m = ++$n;
+ * $n = $n + 1;
+ * $m = $n ;
+ * 
+*/
