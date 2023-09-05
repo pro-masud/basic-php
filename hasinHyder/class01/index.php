@@ -317,8 +317,37 @@
 
 
 
+/**
+ * 
+ * Day: 01    CLASS: 1.23
+ * 
+ */
+
 // for loop multipul value asiend here
-for($i=0, $j= 10; $i <=10; $i++, $j--){
-    echo $i . ":" . $j;
-    echo"\n";
+// for($i=0, $j= 10; $i <=10; $i++, $j--){
+//     echo $i . ":" . $j;
+//     echo"\n";
+// }
+
+
+
+/**
+ * 
+ * Day: 01    CLASS: 1.24
+ * 
+ */
+
+
+ 
+//  any number factorial here
+$n= 6;
+
+for($i = $n, $facto= 1; $i > 1; $i--){
+    $facto = $facto * $i;
+    // $facto *= $i;
 }
+
+printf("Factorial Of %d is %d", $n, $facto);
+
+
+
