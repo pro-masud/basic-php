@@ -118,3 +118,22 @@ $m = $n++;
  * $m = $n ;
  * 
 */
+
+
+
+
+
+/**
+ * 
+ * Day: 01    CLASS: 1.9
+ * 
+ */
+
+ $decmeal = 12;
+ $binary = 12;
+ $octal = 112;
+ $hex = "6434";
+
+ printf("This is a Dacemal Number %d To %b \n", $decmeal, $binary );
+ printf("This is a Dacemal Number %d To %o \n", $decmeal, $octal );
+ printf("This is a Dacemal Number %d To %x \n", $decmeal, $hex );
