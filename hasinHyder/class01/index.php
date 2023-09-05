@@ -309,8 +309,16 @@
 
 // && || and , || and or condition true and false
 
-$files = false || true; // true
-$ToFiles = false or true;   // ($ToFiles = false ) or true / $ToFiles = false
+// $files = false || true; // true
+// $ToFiles = false or true;   // ($ToFiles = false ) or true / $ToFiles = false
 
-var_dump($files);
-var_dump($ToFiles);
+// var_dump($files);
+// var_dump($ToFiles);
+
+
+
+// for loop multipul value asiend here
+for($i=0, $j= 10; $i <=10; $i++, $j--){
+    echo $i . ":" . $j;
+    echo"\n";
+}
