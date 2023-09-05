@@ -240,30 +240,77 @@
 // if else nessed condition 
 
 
-$conOne = true;
-$conTwo = true;
-$conThree = false;
+// $conOne = true;
+// $conTwo = true;
+// $conThree = false;
 
-if($conOne){
-    if($conTwo){
-        if($conThree){
-            echo "Hello";
-        }else{
-            echo "Flase One";
-        }
-    }else{
-        echo "Flase Two";
-    }
-}else{
-    echo "Flase Three";
-}
+// if($conOne){
+//     if($conTwo){
+//         if($conThree){
+//             echo "Hello";
+//         }else{
+//             echo "Flase One";
+//         }
+//     }else{
+//         echo "Flase Two";
+//     }
+// }else{
+//     echo "Flase Three";
+// }
 
-echo "\n";
+// echo "\n";
 
-if($conOne && $conTwo && $conThree){
-    echo "Hello";
-}else if($conOne && $conTwo){
-    echo "True Two";
-}else{
-    echo "True One";
-}
+// if($conOne && $conTwo && $conThree){
+//     echo "Hello";
+// }else if($conOne && $conTwo){
+//     echo "True Two";
+// }else{
+//     echo "True One";
+// }
+
+
+
+
+
+
+
+
+
+/**
+ * 
+ * Day: 01    CLASS: 1.15
+ * 
+ */
+
+//  $number = 33;
+
+//  if( $number == 33){
+//     echo "This number is True";
+//  }else{
+//     echo "This Number Not a True";
+//  }
+
+//  echo "\n";
+
+// //  ternary oparetor width condition
+//  $number = ($number == 33) ? "This NUmber True" : "This Number Not True";
+
+// echo $number;
+
+// echo "\n";
+
+// $text = 22;
+
+// $textPro = ($text <= 20) ? "This Number Is True" : "this Number Is a False";
+
+// echo $textPro;
+
+
+
+// && || and , || and or condition true and false
+
+$files = false || true; // true
+$ToFiles = false or true;   // ($ToFiles = false ) or true / $ToFiles = false
+
+var_dump($files);
+var_dump($ToFiles);
