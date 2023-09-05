@@ -39,27 +39,48 @@
  */
 
 
- $task = "Hello World";
- echo $task;
- echo "\n";
+//  $task = "Hello World";
+//  echo $task;
+//  echo "\n";
 
- $task = "Pro World";
- echo $task;
- echo "\n";
+//  $task = "Pro World";
+//  echo $task;
+//  echo "\n";
 
- #comment 
- //comment
- /*
-    Comments
+//  #comment 
+//  //comment
+//  /*
+//     Comments
+//  */
+
+//  /**
+//   * multi pul line comment data here now
+//  */
+
+// define("PI", 3.14159);
+
+// echo PI;
+
+
+
+
+/**
+ * 
+ * Day: 01    CLASS: 1.3
+ * 
  */
 
- /**
-  * multi pul line comment data here now
- */
 
-define("PI", 3.14159);
+ $number = 12;
 
-echo PI;
+ $number += 13; // $number = $number + 13;
 
+$number = (20-10) * 2;
+
+$number = (30-24) / 2;
+
+$number = (33 - 3) % 4; //BODMAS = Bracket, Of, Division, Multiplication, Addition, and Subtraction
+ 
+ echo $number ;
 
 
