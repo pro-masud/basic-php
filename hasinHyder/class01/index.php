@@ -340,14 +340,43 @@
 
  
 //  any number factorial here
-$n= 6;
 
-for($i = $n, $facto= 1; $i > 1; $i--){
-    $facto = $facto * $i;
-    // $facto *= $i;
-}
+// $n= 6;
 
-printf("Factorial Of %d is %d", $n, $facto);
+// for($i = $n, $facto= 1; $i > 1; $i--){
+//     $facto = $facto * $i;
+//     // $facto *= $i;
+// }
 
+// printf("Factorial Of %d is %d", $n, $facto);
+
+
+
+
+// multipul condition if else here now
+
+// for($i = 0, $j = 0; $i < 100; $i+=7, $j+=11){
+
+//     if($i % 7 == 0){
+//         if($j % 11 == 0){
+//             echo $j < 100 ? $j . "\n" : '';
+//         }
+//     }
+
+//     // echo $j;
+// }
+
+
+
+
+
+// null coalaseing oparetor
+
+$userOne = "Masud rana";
+$userTwo = "Dokhon";
+
+$users = $userOne ?? $userTwo;
+
+echo $users;
 
 
