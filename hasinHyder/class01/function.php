@@ -73,19 +73,57 @@
 */
 
 
-function numbers($n, $m, ...$number):int{ //This Sine Is a -> ...$varibule function multipul argument receive
-    $plass=  $n + $m;
-    $result = 0;
-    for($i = 0; $i < count($number); $i++){
-        $result += $number[$i];
-    }
+// function numbers($n, $m, ...$number):int{ //This Sine Is a -> ...$varibule function multipul argument receive
+//     $plass=  $n + $m;
+//     $result = 0;
+//     for($i = 0; $i < count($number); $i++){
+//         $result += $number[$i];
+//     }
 
-    return $plass + $result;
-}
-
-
-echo numbers(3, 4, 5, 8, 4, 2);
+//     return $plass + $result;
+// }
 
 
+// echo numbers(3, 4, 5, 8, 4, 2);
+
+
+
+
+
+
+/**
+ * function maintanable  
+ * 
+ * */ 
+
+ function taskA(){
+    echo "Working To TaskA ";
+ }
+
+ function taskB(){
+    echo "Working To TaskB";
+ }
+
+ function taskC(){
+    echo "Working To TaskC";
+ }
+
+ function taskD(){
+    echo "Working To TaskD";
+ }
+
+
+ function taskAll(){
+    taskA();
+    echo "\n";
+    taskB();
+    echo "\n";
+    taskC();
+    echo "\n";
+    taskD();
+ }
+
+
+ taskAll();
 
 ?>
