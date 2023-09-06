@@ -301,20 +301,45 @@
 
 
 
+    // /**
+    //  * array array_slice() working this chapter now
+    //  * */ 
+
+    //  $arrayData =  ['masud rana', 'rana hosan', 'khalid hasan','ajim','php'];
+
+    // print_r($arrayData);
+
+    // echo "\n";
+
+    // // $newData = array_slice($arrayData, 1);
+    // // $newData = array_slice($arrayData, 1, 3);
+    // // $newData = array_slice($arrayData, 1, 3, true);    // data show current key postion in array data
+    // $newData = array_slice($arrayData, 1, 3, true);    // data show current key postion in array data
+
+    // print_r($newData);
+
+
+
+
+
+
+
+
+
+
+
     /**
-     * array array_slice() working this chapter now
+     * array array_splice() working this chapter now
      * */ 
 
      $arrayData =  ['masud rana', 'rana hosan', 'khalid hasan','ajim','php'];
 
-    print_r($arrayData);
+    $updateData = ['JavaScript', 'Go', "TypeScript"];
 
-    echo "\n";
-
-    // $newData = array_slice($arrayData, 1);
-    // $newData = array_slice($arrayData, 1, 3);
-    // $newData = array_slice($arrayData, 1, 3, true);    // data show current key postion in array data
-    $newData = array_slice($arrayData, 1, 3, true);    // data show current key postion in array data
-
+    // $newData = array_splice($arrayData, 2);
+    // $newData = array_splice($arrayData, 2, 3);
+    $newData = array_splice($arrayData, 2, 3, $updateData);
     print_r($newData);
+
+    print_r($arrayData);
 ?>
