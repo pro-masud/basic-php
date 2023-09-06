@@ -55,12 +55,36 @@
  * set function working fix data type here
 */
 
-function ageCal(float $x, $y, $z):float{
-    return $x + $y + $z;
+// function ageCal(float $x, $y, $z):float{
+//     return $x + $y + $z;
+// }
+
+
+// echo ageCal(4.4, 5.076, 6.888888);
+
+
+
+
+
+/**
+ * how to set function multipul argument
+ * 
+ *  This Sine Is a -> ...$varibule function multipul argument receive
+*/
+
+
+function numbers($n, $m, ...$number):int{ //This Sine Is a -> ...$varibule function multipul argument receive
+    $plass=  $n + $m;
+    $result = 0;
+    for($i = 0; $i < count($number); $i++){
+        $result += $number[$i];
+    }
+
+    return $plass + $result;
 }
 
 
-echo ageCal(4.4, 5.076, 6.888888);
+echo numbers(3, 4, 5, 8, 4, 2);
 
 
 
