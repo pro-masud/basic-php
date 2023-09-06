@@ -332,14 +332,42 @@
      * array array_splice() working this chapter now
      * */ 
 
-     $arrayData =  ['masud rana', 'rana hosan', 'khalid hasan','ajim','php'];
+    //  $arrayData =  ['masud rana', 'rana hosan', 'khalid hasan','ajim','php'];
 
-    $updateData = ['JavaScript', 'Go', "TypeScript"];
+    // $updateData = ['JavaScript', 'Go', "TypeScript"];
 
-    // $newData = array_splice($arrayData, 2);
-    // $newData = array_splice($arrayData, 2, 3);
-    $newData = array_splice($arrayData, 2, 3, $updateData);
-    print_r($newData);
+    // // $newData = array_splice($arrayData, 2);
+    // // $newData = array_splice($arrayData, 2, 3);
+    // $newData = array_splice($arrayData, 2, 3, $updateData);
+    // print_r($newData);
 
-    print_r($arrayData);
+    // print_r($arrayData);
+
+
+
+
+
+
+
+
+
+     /**
+     * array array_merge() function working
+     * */ 
+
+
+      $arrayData =  ['masud rana', 'rana hosan', 'khalid hasan','ajim','php', 'javascript', 'go'];
+
+
+    //   print_r($arrayData);
+
+      $arrayDataOne = array_slice($arrayData, 0, 3);
+      $arrayDataTwo = array_slice($arrayData, 3);
+    
+    //  print_r($arrayDataOne);
+    //  print_r($arrayDataTwo);
+
+    $arrayDataPlas = array_merge($arrayDataOne, $arrayDataTwo);
+
+    print_r($arrayDataPlas);
 ?>
