@@ -151,17 +151,146 @@
      * 
      * */ 
 
-     $someText = "masud, rana, khirul, pathan, dobirul, hasan, kasim";
+    //  $someText = "masud, rana, khirul, pathan, dobirul, hasan, kasim";
 
-     $export = explode(", ", $someText);
+    //  $export = explode(", ", $someText);
 
-    // output data for loops
-    //  for($i = 0; $i< count($export); $i++){
-    //     echo $export[$i] . "\n";
-    //  }
+    // // output data for loops
+    // //  for($i = 0; $i< count($export); $i++){
+    // //     echo $export[$i] . "\n";
+    // //  }
 
-    $strText = join(" ", $export);
+    // $strText = join(" ", $export);
 
-    echo $strText;
+    // echo $strText;
+
+
+
+
+
+
+
+
+
+    
+    /**
+     * how to create a multi deimoncial array
+     * 
+     * */ 
+
+
+    //  $users = [
+    //     'userOne' => [
+    //         'userTwo'   => [
+    //             'userThree' => ['masud', 'khan', 'Anik', 'alok'],
+    //         ],
+    //     ],
+    //  ];
+
+
+    // //  echo $users['userOne']['userTwo']['userThree']['2'];
+
+    // $values = array_values($users['userOne']['userTwo']['userThree']);
+
+    // for($i = 0; $i < count($values); $i++){
+    //     $value = $values[$i];
+    //     echo $value . "\n";
+    // }
+
+
+
+
+
+
+
+
+
+
+      /**
+     * array data to serialize() and unserialize() , json_cncode() and json_decode()
+     * 
+     * */ 
+
+
+    //  $student = [
+    //     "id" => 01,
+    //     "name"  => "masud rana",
+    //     "age"   => 22,
+    //     "job"   => "PHP Developer",
+    //     "location"  => "dinajpur",
+
+    //  ];
+
+    // // output data 
+    //  print_r($student);
+
+    // $serializeData = serialize($student);
+    // echo $serializeData;
+    //  echo "\n";
+    // $unserializeData = unserialize($serializeData);
+
+    // print_r($unserializeData);
+
+
+    // echo "\n";
+
+    // $jsonData = json_encode($student);
+
+    // echo $jsonData;
+
+    // echo "\n";
+
+    // $jsonDecodeData = json_decode($jsonData, true);
+    //  echo "\n";
+    // print_r($jsonDecodeData);
+
+
+
+
+
+
+
+
+
+
+    /**
+     * ৩.৭ - কপি বাই ভ্যালু এবং কপি বাই রেফারেন্স
+     * */ 
+
+    //  $someData = [
+    //     "fname" => "DJ Chad",
+    //     "lname" => "Alo K Panda"
+    //  ];
+
+
+    //  $newData = $someData;
+    //  $newData['lname']  = "Arjun";
+
+
+    //  print_r($someData);
+    //  print_r($newData);
+
+
+
+
+
+
+
+
+
+    /**
+     * array_key unset() remove array key 
+     * */ 
+
+    //  $someData = [
+    //     "fname" => "DJ Chad",
+    //     "lname" => "Alo K Panda"
+    //  ];
+
+    //  print_r($someData);
+     
+    // unset($someData['lname']);
+
+    // print_r($someData);
 
 ?>
