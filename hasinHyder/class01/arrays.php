@@ -293,4 +293,28 @@
 
     // print_r($someData);
 
+
+
+
+
+
+
+
+
+    /**
+     * array array_slice() working this chapter now
+     * */ 
+
+     $arrayData =  ['masud rana', 'rana hosan', 'khalid hasan','ajim','php'];
+
+    print_r($arrayData);
+
+    echo "\n";
+
+    // $newData = array_slice($arrayData, 1);
+    // $newData = array_slice($arrayData, 1, 3);
+    // $newData = array_slice($arrayData, 1, 3, true);    // data show current key postion in array data
+    $newData = array_slice($arrayData, 1, 3, true);    // data show current key postion in array data
+
+    print_r($newData);
 ?>
