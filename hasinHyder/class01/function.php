@@ -134,33 +134,62 @@
  * recursive function and recursion work within function
  * */ 
 
-    function reCupMe($num){
-        if($num > 20){
-            return;
-        }
-        echo $num;
-        $num++;
+    // function reCupMe($num){
+    //     if($num > 20){
+    //         return;
+    //     }
+    //     echo $num;
+    //     $num++;
 
-        echo "\n";
-        reCupMe($num);
-    }
+    //     echo "\n";
+    //     reCupMe($num);
+    // }
 
-    // echo reCupMe(1);
+    // // echo reCupMe(1);
 
 
-    function resCupMe($start, $end, $step){
-        if($start > $end){
-            return;
-        }
+    // function resCupMe($start, $end, $step){
+    //     if($start > $end){
+    //         return;
+    //     }
 
-        echo $start += $step;
-        echo "\n";
+    //     echo $start += $step;
+    //     echo "\n";
 
-        resCupMe($start, $end, $step);
+    //     resCupMe($start, $end, $step);
 
-    }
+    // }
 
-    resCupMe(20, 40, 6);
+    // resCupMe(20, 40, 6);
 
+
+
+
+/**
+ * 
+ * */ 
+
+ function fibonacci($old, $new, $end){
+    static $start;
+     $start = $start ?? 1;
+
+     if($start > $end){
+        return;
+     }
+
+     $start++;
+
+     echo $old . " ";
+     $_temp = $old + $new;
+     $old = $new;
+     echo "\n";
+     $new = $_temp;
+    //  echo $new;
+
+
+     fibonacci($old, $new, $end);
+ }
+
+ fibonacci(0,1, 11);
 
 ?>
