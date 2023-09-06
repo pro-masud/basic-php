@@ -169,27 +169,56 @@
  * 
  * */ 
 
- function fibonacci($old, $new, $end){
-    static $start;
-     $start = $start ?? 1;
+//  function fibonacci($old, $new, $end){
+//     static $start;
+//      $start = $start ?? 1;
 
-     if($start > $end){
-        return;
-     }
+//      if($start > $end){
+//         return;
+//      }
 
-     $start++;
+//      $start++;
 
-     echo $old . " ";
-     $_temp = $old + $new;
-     $old = $new;
-     echo "\n";
-     $new = $_temp;
-    //  echo $new;
+//      echo $old . " ";
+//      $_temp = $old + $new;
+//      $old = $new;
+//      echo "\n";
+//      $new = $_temp;
+//     //  echo $new;
 
 
-     fibonacci($old, $new, $end);
+//      fibonacci($old, $new, $end);
+//  }
+
+//  fibonacci(0,1, 11);
+
+
+
+/**
+ *  local variable and global variable here
+ * 
+ * */ 
+
+
+ $name = "Masud Rana"; // this is a Global variable 
+
+ function youToMe(){
+   global $age;
+   $age = 22; // this is a local variable 
+    global $name;
+
+    echo $name; 
  }
 
- fibonacci(0,1, 11);
+
+
+youToMe();
+
+echo "\n";
+
+echo $age;
+
+
+
 
 ?>
