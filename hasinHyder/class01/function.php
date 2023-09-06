@@ -96,34 +96,71 @@
  * 
  * */ 
 
- function taskA(){
-    echo "Working To TaskA ";
- }
+//  function taskA(){
+//     echo "Working To TaskA ";
+//  }
 
- function taskB(){
-    echo "Working To TaskB";
- }
+//  function taskB(){
+//     echo "Working To TaskB";
+//  }
 
- function taskC(){
-    echo "Working To TaskC";
- }
+//  function taskC(){
+//     echo "Working To TaskC";
+//  }
 
- function taskD(){
-    echo "Working To TaskD";
- }
-
-
- function taskAll(){
-    taskA();
-    echo "\n";
-    taskB();
-    echo "\n";
-    taskC();
-    echo "\n";
-    taskD();
- }
+//  function taskD(){
+//     echo "Working To TaskD";
+//  }
 
 
- taskAll();
+//  function taskAll(){
+//     taskA();
+//     echo "\n";
+//     taskB();
+//     echo "\n";
+//     taskC();
+//     echo "\n";
+//     taskD();
+//  }
+
+
+//  taskAll();
+
+
+
+
+
+/**
+ * recursive function and recursion work within function
+ * */ 
+
+    function reCupMe($num){
+        if($num > 20){
+            return;
+        }
+        echo $num;
+        $num++;
+
+        echo "\n";
+        reCupMe($num);
+    }
+
+    // echo reCupMe(1);
+
+
+    function resCupMe($start, $end, $step){
+        if($start > $end){
+            return;
+        }
+
+        echo $start += $step;
+        echo "\n";
+
+        resCupMe($start, $end, $step);
+
+    }
+
+    resCupMe(20, 40, 6);
+
 
 ?>
