@@ -582,9 +582,9 @@ function odd($n){
  * mt_rand() function working 
 */
 
-$rangeNumber = range(0, 999);
+$rangeNumber = range(10000, 50000);
 
-$randomNumber = mt_rand(0, 999);
+$randomNumber = mt_rand(0, 50000);
 echo $rangeNumber[$randomNumber];
 // print_r($rangeNumber);
     

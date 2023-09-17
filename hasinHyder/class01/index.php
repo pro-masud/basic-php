@@ -372,11 +372,45 @@
 
 // null coalaseing oparetor
 
-$userOne = "Masud rana";
-$userTwo = "Dokhon";
+// $userOne = "Masud rana";
+// $userTwo = "Dokhon";
 
-$users = $userOne ?? $userTwo;
+// $users = $userOne ?? $userTwo;
 
-echo $users;
+// echo $users;
+
+
+
+$sales = [];
+
+for($i=0; $i < 12; $i++){
+    $sales[] = rand(10000, 50000); 
+}
+
+function totalValue($old, $newData){
+    return $old + $newData;
+}
+
+// print_r($sales);
+
+$maxSale = array_search(max($sales), $sales);
+$minSale = array_search(min($sales), $sales);
+$totalArrayValue = array_reduce($sales, 'totalValue');
+// $newArray = array_intersect(, $sales);
+// print_r($totalArrayValue);
+echo $sales[$maxSale];
+echo "\n";
+echo $sales[$minSale];
+// print_r($maxSale);
+
+// print_r($minSale);
+
+
+// $i = 0;
+rsort($sales);
+foreach( $sales as $month){
+    echo "{$i} This Month Sales: {$month} ". "\n";
+    $i++;
+}
 
 
