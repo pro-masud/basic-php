@@ -10,6 +10,19 @@
      }
 
 
+    /**
+     * 
+     * create a select option this function
+     * 
+     * */  
+
+
+     function selectOption($options){
+        foreach($options as $option){
+            printf('<option value="%s">%s</option>', strtolower($option), ucwords($option));
+        }
+     }
+
 
 
 
