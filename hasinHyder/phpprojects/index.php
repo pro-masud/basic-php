@@ -19,7 +19,9 @@
         
             $fname = "";
             $lname = "";
-        
+            $checked = "";
+
+            // define("FILTER_SANITIZE_STRING", "513");
 
         ?>
 
@@ -33,13 +35,20 @@
                     <p>
                         <?php
                             if(isset($_REQUEST['fname']) && !empty($_REQUEST['fname'])){
-                                echo "First Name: " . $fname = $_REQUEST['fname'];
+                                echo "First Name: " . $fname = htmlspecialchars($_REQUEST['fname']);
+                                // echo "First Name: " . $fname = filter_input(INPUT_POST, 'fname', FILTER_SANITIZE_STRING);
                             }
 
                             echo "<br>";
 
                             if(isset($_REQUEST['lname']) && !empty($_REQUEST['lname'])){
-                                echo "Last Name: " . $lname = $_REQUEST['lname'];
+                                echo "Last Name: " . $lname = htmlspecialchars($_REQUEST['lname']);
+                                // echo "Last Name: " . $lname = filter_input(INPUT_POST, "lname", FILTER_SANITIZE_STRING);
+                            }
+
+                            // checkbox is a checked 
+                            if(isset($_REQUEST['checkbox']) && $_REQUEST['checkbox'] == 1){
+                                $checked = " checked ";
                             }
                         ?>
                     </p>
@@ -49,9 +58,17 @@
                 <div class="column column-50 column-offset-25">
                     <form method="POST">
                         <fieldset>
-                            <input name="fname" type="text" placeholder="First Name">
+                            <div>
+                                <input name="fname" type="text" placeholder="First Name" value="<?php echo $fname;?>">
+                            </div>
 
-                            <input name="lname" type="text" placeholder="Last Name">
+                            <div>
+                                <input name="lname" type="text" placeholder="Last Name"  value="<?php echo $lname;?>">
+                            </div>
+
+                            <div>
+                                <input name="checkbox" type="checkbox" value="1"  <?php echo $checked; ?> > 
+                            </div>
                             
                             <input class="button-primary" type="submit" value="Send">
                         </fieldset>
