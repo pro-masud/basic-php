@@ -1,3 +1,6 @@
+<?php 
+    include "function.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +11,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
     <style>
+        *{
+            margin: 0; 
+            padding: 0;
+            box-sizing: border-box;
+        }
         .from{
             margin-top: 100px;
         }
@@ -59,15 +67,28 @@
                     <form method="POST">
                         <fieldset>
                             <div>
-                                <input name="fname" type="text" placeholder="First Name" value="<?php echo $fname;?>">
+                                <input name="fname" type="text" placeholder="First Name" value="<?php echo $fname; ?>">
                             </div>
 
                             <div>
-                                <input name="lname" type="text" placeholder="Last Name"  value="<?php echo $lname;?>">
+                                <input name="lname" type="text" placeholder="Last Name"  value="<?php echo $lname; ?>">
                             </div>
 
                             <div>
                                 <input name="checkbox" type="checkbox" value="1"  <?php echo $checked; ?> > 
+                            </div>
+                            <p>Some CheckBox</p>
+                            <div>
+                                <input name="fruits[]" type="checkbox" value="orange" <?php isChecked("fruits", "orange"); ?>> 
+                                <label class="label-inline" for="orange">Orange</label> <br>
+                                <input name="fruits[]" type="checkbox" value="mango" <?php isChecked("fruits", "mango"); ?>> 
+                                <label class="label-inline" for="mango">Mango</label><br>
+                                <input name="fruits[]" type="checkbox" value="lemon" <?php isChecked("fruits", "lemon"); ?>> 
+                                <label class="label-inline" for="lemon">Lemon</label><br>
+                                <input name="fruits[]" type="checkbox" value="apple" <?php isChecked("fruits", "apple"); ?>> 
+                                <label class="label-inline" for="apple">Apple</label><br>
+                                <input name="fruits[]" type="checkbox" value="jali" <?php isChecked("fruits", "jali"); ?>> 
+                                <label class="label-inline" for="jali">Jali</label><br>
                             </div>
                             
                             <input class="button-primary" type="submit" value="Send">
