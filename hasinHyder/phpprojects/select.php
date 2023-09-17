@@ -40,14 +40,7 @@
                     <h3>Programming Language</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga est reiciendis repellendus officiis consequuntur modi eius sapiente, fugiat architecto deserunt.</p>
                     <p>
-                        <?php 
-    
-                            $number = $_POST['langu'] ?? [];
-                            if(isset($number) && $number != ""){
-                                echo join(", ", $number);
-                            }
-
-                        ?>
+                        
                     </p>
                 </div>
             </div>
@@ -55,8 +48,16 @@
                 <div class="column column-50 column-offset-25">
                     <form method="POST">
                         <fieldset>
-                            <p style="font-weight: blod;">Select Your Programming lenguage</p>
-                            
+                            <p style="font-weight: blod;">Select Your Programming lenguage: <?php 
+    
+                                $number = $_POST['langu'] ?? [];
+                                $outPutData = '';
+                                if(isset($number) && $number != ""){
+                                    echo join(", ", $number);
+                                }
+
+                            ?> </p>
+                                                        
                             <select style="height: 300px;" name="langu[]" id="langu" multiple>
                                 <option selected disabled value="">Selected Language</option>
                                 <?php selectOption($language, $number); ?>
