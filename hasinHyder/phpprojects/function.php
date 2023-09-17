@@ -17,9 +17,14 @@
      * */  
 
 
-     function selectOption($options){
+     function selectOption($options, $selectedVal){
         foreach($options as $option){
-            printf('<option value="%s">%s</option>', strtolower($option), ucwords($option));
+            $option = strtolower($option);
+            $selected = '';
+            if(in_array($option, $selectedVal)){
+                $selected = "selected";
+            }
+            printf('<option value="%s" %s >%s</option>',$option ,  $selected,  ucwords($option));
         }
      }
 
