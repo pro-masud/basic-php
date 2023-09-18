@@ -39,9 +39,21 @@ $stringTwo = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus 
 
 // echo str_replace("World", "Masud", $string);   // output result is: Hello Masud
 
-$strTok = preg_split("/ /", $stringTwo);
+// $strTok = preg_split("/ /", $stringTwo);
 
-print_r($strTok);
+// print_r($strTok);
+
+
+
+
+// str_replese()
+
+$string = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, repellat!";
+
+$replase = str_ireplace(['lorem', 'dolor', 'consectetur'], "demo", $string, $count);
+echo $replase;
+echo "\n";
+echo $count;
 
 
 ?>
