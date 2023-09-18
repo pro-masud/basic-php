@@ -59,6 +59,8 @@
                                     echo $photos = $_FILES['photos']['name'];
                                }
 
+                               print_r($_FILES['photos']);
+
 
 
                             ?>
