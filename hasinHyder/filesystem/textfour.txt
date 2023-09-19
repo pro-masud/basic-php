@@ -1,5 +1,4 @@
-Masud, Rana, 18, 12, 1 
-Al Amin, Islam, 25, BBA, 2 
-Fatima, Khatun, 18, 12, 3 
-Parvej, Islam, 18, 12, 4 
-Monuar, Rahman, 18, 12, 6 
+Masud,Rana,18,12,1
+"Al Amin",Islam,25,BBA,2
+Parvej,Islam,18,12,4
+Monuar,Rahman,18,12,6

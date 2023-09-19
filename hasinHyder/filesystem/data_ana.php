@@ -103,6 +103,10 @@ print_r($data);
 
 echo "\n\n";
 // remove for database 
-unset($data['2']);
+// unset($data['2']);
 
-print_r($data);
+$fOpen = fopen($filePath, 'w');
+
+foreach($data as $line){
+    fwrite($fOpen, $line);
+}
