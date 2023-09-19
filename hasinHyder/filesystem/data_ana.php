@@ -73,7 +73,26 @@ $students = [
 
 
 
-$fOpen = fopen($filePath, 'r');
-while($student = fgetcsv($fOpen)){
-    printf("Name: %s %s\nAge: %s\nClass: %s\nRoll: %s\n\n", $student[0], $student[1], $student[2], $student[3], $student[4]);
-}
+// $fOpen = fopen($filePath, 'r');
+// while($student = fgetcsv($fOpen)){
+//     printf("Name: %s %s\nAge: %s\nClass: %s\nRoll: %s\n\n", $student[0], $student[1], $student[2], $student[3], $student[4]);
+// }
+
+
+
+// single data output here now
+$student = [
+    "fname" => "Mohidur",
+        "lname" => "Rahman",
+        "age"   => 18,
+        "class" => 12,
+        "roll"  => 007,
+];
+
+$fOpen = fopen($filePath, 'a');
+
+fputcsv($fOpen, $student);
+fclose($fOpen);
+
+
+// single data remove for database here 
