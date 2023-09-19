@@ -50,9 +50,30 @@ $students = [
 // fclose($fOpen);
 
 
+/**
+ * 
+ * file data storing here now
+ * 
+*/
+
+// $fOpen = fopen($filePath, 'w');
+
+// foreach($students as $student){
+//     fputcsv($fOpen, $student);
+// }
+
+
+
 // data read to file patha
+// $fOpen = fopen($filePath, 'r');
+// while($data = fgets($fOpen)){
+//     $student = explode(",", $data);
+//     printf("Name: %s %s\nAge: %sClass: %s\nRoll: %s\n", $student[0], $student[1], $student[2], $student[3], $student[4]);
+// }
+
+
+
 $fOpen = fopen($filePath, 'r');
-while($data = fgets($fOpen)){
-    $student = explode(",", $data);
-    printf("Name: %s %s\nAge: %sClass: %s\nRoll: %s\n", $student[0], $student[1], $student[2], $student[3], $student[4]);
+while($student = fgetcsv($fOpen)){
+    printf("Name: %s %s\nAge: %s\nClass: %s\nRoll: %s\n\n", $student[0], $student[1], $student[2], $student[3], $student[4]);
 }
