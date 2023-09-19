@@ -81,18 +81,28 @@ $students = [
 
 
 // single data output here now
-$student = [
-    "fname" => "Mohidur",
-        "lname" => "Rahman",
-        "age"   => 18,
-        "class" => 12,
-        "roll"  => 007,
-];
+// $student = [
+//     "fname" => "Mohidur",
+//         "lname" => "Rahman",
+//         "age"   => 18,
+//         "class" => 12,
+//         "roll"  => 007,
+// ];
 
-$fOpen = fopen($filePath, 'a');
+// $fOpen = fopen($filePath, 'a');
 
-fputcsv($fOpen, $student);
-fclose($fOpen);
+// fputcsv($fOpen, $student);
+// fclose($fOpen);
 
 
 // single data remove for database here 
+
+$data = file($filePath);
+
+print_r($data);
+
+echo "\n\n";
+// remove for database 
+unset($data['2']);
+
+print_r($data);
