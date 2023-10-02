@@ -3,7 +3,7 @@
 //  ক্লাসের পাবলিক এবং প্রাইভেট মেথড
 
 class Fund{
-    public $fund;
+    private $fund;
 
     function __construct($initialFund = 0){
         $this ->fund = $initialFund;
