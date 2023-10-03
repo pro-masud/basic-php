@@ -52,3 +52,30 @@ echo "\n";
 $newCat -> Hi();
 echo "\n";
 $newRuble -> runing();
+
+
+
+class parentClass{
+    public $name;
+
+    public function __construct($name){
+        $this -> name = $name;
+        $this -> sayHi();
+    }
+
+    public function sayHi(){
+        echo "Hi," . $this -> name;
+    }
+}
+
+
+
+class ChildClass extends parentClass{
+    public function sayHi(){
+        parent::sayHi();
+        echo "\n";
+        echo "Hello";
+    }
+}
+
+$newObj = new ChildClass("Masud Rana");
