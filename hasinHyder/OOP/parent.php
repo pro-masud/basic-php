@@ -13,7 +13,6 @@ class B extends A{
         parent::sayHi();
     }
 }
-
 $newObj = new B();
 
 B::sayHi();
