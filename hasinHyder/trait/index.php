@@ -2,6 +2,7 @@
 trait NumberSeriesOne{
     function numberSeriesA(){
         echo "Number Series A\n";
+        // parent::numberSeriesA(); loading a number serices
     }
 
     function numberSeriesB(){
@@ -9,15 +10,16 @@ trait NumberSeriesOne{
     }
 }
 
-class NumberSeries{
-    use NumberSeriesOne;
-    /* dubell inicialize method */ 
+class SomeNumber{
     function numberSeriesA(){
-        echo "Number Series A+A\n";
+        echo "Number Series A+B\n";
     }
+}
+
+class NumberSeries extends SomeNumber{
+    use NumberSeriesOne;
 }
 
 
 $newSeries = new NumberSeries();
-
 $newSeries -> numberSeriesA();
